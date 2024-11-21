@@ -1,0 +1,5 @@
+
+config BR2_PACKAGE_AUDIO_EQ_DRIVER
+	bool "audioeqdriver"
+	help
+	  Includes the audioeqdreiver executable and start up script
