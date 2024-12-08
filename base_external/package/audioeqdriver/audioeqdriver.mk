@@ -4,7 +4,7 @@
 #
 ##############################################################
 
-AUDIOEQDRIVER_VERSION = '1c710f24e0e11a33b7cc37db30e20783838c7c74'
+AUDIOEQDRIVER_VERSION = '5f651a975fd69f58ea310ad3998ebd3d540cf300'
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
