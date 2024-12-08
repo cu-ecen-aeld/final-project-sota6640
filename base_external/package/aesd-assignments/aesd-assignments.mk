@@ -11,6 +11,8 @@ AESD_ASSIGNMENTS_VERSION = '2d09c3507bfeea4e3b150d7b1ef1aadb5ed32346'
 # Your site should start with git@github.com:
 AESD_ASSIGNMENTS_SITE = 'git@github.com:cu-ecen-aeld/final-project-Sriram-Y.git'
 AESD_ASSIGNMENTS_SITE_METHOD = git
+AESD_ASSIGNMENTS_DEPENDENCIES = alsa-lib
+AESD_ASSIGNMENTS_CONF_OPTS += $(shell pkg-config --cflags --libs alsa)
 
 define AESD_ASSIGNMENTS_BUILD_CMDS
     $(info Using cross-compiler: arm-none-linux-gnueabihf-gcc)
