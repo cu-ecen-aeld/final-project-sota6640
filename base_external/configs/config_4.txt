@@ -27,3 +27,8 @@ dtoverlay=miniuart-bt
 
 # enable autoprobing of Bluetooth driver without need of hciattach/btattach
 dtparam=krnbt=on
+
+
+dtparam=i2s=on
+dtoverlay=hifiberry-dac
+dtoverlay=i2s-mmap
