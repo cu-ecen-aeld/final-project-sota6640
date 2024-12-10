@@ -29,6 +29,5 @@ dtoverlay=miniuart-bt
 dtparam=krnbt=on
 
 
-dtparam=i2s=on
-dtoverlay=hifiberry-dac
-dtoverlay=i2s-mmap
+dtparam=audio=on
+hdmi_force_edid_audio=0

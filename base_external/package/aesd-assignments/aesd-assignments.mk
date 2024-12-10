@@ -5,7 +5,7 @@
 ##############################################################
 
 # TODO: Fill up the contents below in order to reference your assignment 3 git contents
-AESD_ASSIGNMENTS_VERSION = ffce9f4b44f730338a414a2c77caab98c5e22352
+AESD_ASSIGNMENTS_VERSION = 34d67c3f9d0fbceb37c55e4d695fd21dce959610
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
@@ -34,7 +34,9 @@ define AESD_ASSIGNMENTS_INSTALL_TARGET_CMDS
     $(info $(INSTALL))
     $(INSTALL) -m 0777 $(@D)/audioeqdriver $(TARGET_DIR)/usr/bin/
     $(INSTALL) -m 0777 $(@D)/scripts/audioeqdriver-start-stop.sh $(TARGET_DIR)/etc/init.d/S99audioeqdriver
-    $(INSTALL) -m 0664 $(@D)/test_mp3/audio.mp3 $(TARGET_DIR)/media
+    $(INSTALL) -m 0755 $(@D)/audio1.mp3 $(TARGET_DIR)/usr/bin/
+    $(INSTALL) -m 0755 $(@D)/test1.wav $(TARGET_DIR)/usr/bin/
+
 endef
 
 $(eval $(generic-package))
